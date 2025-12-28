@@ -1,59 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio | Siti Irmawati</title>
 
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
     />
-
-    <!-- Bootstrap icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
     />
-
-    <!-- Add icon library -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
-    <!-- My css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <title>My Portofolio | Siti Irmawati</title>
   </head>
   <body id="home">
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">MY PORTFOLIO</a>
+        <a class="navbar-brand fw-bold" href="#">MY PORTFOLIO</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -68,18 +50,18 @@
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
 
-    <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img
-        src="img/logo.jpg"
-        alt="Siti Irmawati"
-        width="200"
-        class="rounded-circle img-thumbnail"
-      />
-      <h1>Siti Irmawati</h1>
-      <p class="lead">Fullstack Web Developer | Muslimah Learner</p>
+      <div data-aos="fade-down">
+        <img
+          src="img/logo.jpg"
+          alt="Siti Irmawati"
+          width="200"
+          class="rounded-circle img-thumbnail shadow-sm"
+        />
+        <h1 class="display-4">Siti Irmawati</h1>
+        <p class="lead">Fullstack Web Developer | Muslimah Learner</p>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -88,28 +70,27 @@
         ></path>
       </svg>
     </section>
-    <!-- Akhir Jumbotron -->
 
-    <!-- About -->
     <section id="about">
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col"></div>
-          <h2>About Me</h2>
+        <div class="row text-center mb-4">
+          <div class="col" data-aos="fade-up">
+            <h2 class="section-title">About Me</h2>
+          </div>
         </div>
-      </div>
-      <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4">
-          <p>
-            A student in Information Systems. Active in campus organizations,
-            has volunteer experience, and always eager to learn and grow.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <p>
-            Skilled in creating websites, teaching, designing, and developing
-            products. Experienced as a web developer and content creator.
-          </p>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-delay="200">
+            <p>
+              A student in Information Systems. Active in campus organizations,
+              volunteer experience, and always eager to learn.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="fade-left" data-aos-delay="400">
+            <p>
+              Skilled in creating websites, teaching, and developing products.
+              Experienced as a web developer and content creator.
+            </p>
+          </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -120,103 +101,157 @@
         ></path>
       </svg>
     </section>
-    <!-- Akhir About -->
-    <!-- Project -->
+
     <section id="projects">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-4">
           <div class="col">
-            <h2>My Projects</h2>
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
           </div>
         </div>
+
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/projects/1.jpg"
-                class="card-img-top"
-                alt="Project 1"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+          <div class="col-md-4 mb-4" data-aos="flip-left">
+            <div class="card project-card h-100 shadow-sm border-0">
+              <img src="img/projects/1.jpg" class="card-img-top" alt="KasKu" />
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">KasKu</h5>
+                <p class="card-text text-muted">
+                  Sistem Pencatatan Keuangan UMKM berbasis Digital untuk
+                  memantau arus kas secara real-time.
                 </p>
-                <a href="#" class="btn btn-primary">Link Project</a>
+                <a
+                  href="https://kelompokfwd1-sibm3.karyakreasi.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary rounded-pill btn-sm px-4 mt-auto"
+                >
+                  Detail <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
+
+          <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="100">
+            <div class="card project-card h-100 shadow-sm border-0">
               <img
                 src="img/projects/2.jpg"
                 class="card-img-top"
-                alt="Project 2"
+                alt="Booking Kost"
               />
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">Booking Kost</h5>
+                <p class="card-text text-muted">
+                  Platform booking kost online yang memudahkan pengguna mencari
+                  hunian dengan fitur filter lokasi dan harga.
                 </p>
-                <a href="#" class="btn btn-primary">Link Project</a>
+                <a
+                  href="https://github.com/irma-developer/Booking-kost"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary rounded-pill btn-sm px-4 mt-auto"
+                >
+                  Detail <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
+
+          <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
+            <div class="card project-card h-100 shadow-sm border-0">
               <img
                 src="img/projects/3.jpg"
                 class="card-img-top"
-                alt="Project 3"
+                alt="Point Of Sale"
               />
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">Point Of Sale</h5>
+                <p class="card-text text-muted">
+                  Aplikasi kasir berbasis web dengan antarmuka intuitif untuk
+                  manajemen stok dan transaksi penjualan.
                 </p>
-                <a href="#" class="btn btn-primary">Link Project</a>
+                <a
+                  href="https://github.com/irma-developer/POS-Aplikasi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary rounded-pill btn-sm px-4 mt-auto"
+                >
+                  Detail <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
+        </div>
+
+        <div class="row justify-content-center mt-md-2">
+          <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
+            <div class="card project-card h-100 shadow-sm border-0">
               <img
-                src="img/projects/4.jpg"
+                src="https://via.placeholder.com/400x250?text=New+Project"
                 class="card-img-top"
-                alt="Project 4"
+                alt="New Project"
               />
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">Upcoming Project 1</h5>
+                <p class="card-text text-muted">
+                  Deskripsi project baru kamu akan ada di sini. Ceritakan
+                  sedikit tentang fitur utamanya.
                 </p>
-                <a href="#" class="btn btn-primary">Link Project</a>
+                <a
+                  href="#"
+                  class="btn btn-secondary disabled rounded-pill btn-sm px-4 mt-auto"
+                  >Coming Soon</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
+
+          <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
+            <div class="card project-card h-100 shadow-sm border-0">
               <img
-                src="img/projects/5.jpg"
+                src="https://via.placeholder.com/400x250?text=New+Project"
                 class="card-img-top"
-                alt="Project 5"
+                alt="New Project"
               />
-              <div class="card-body text-center">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">Upcoming Project 2</h5>
+                <p class="card-text text-muted">
+                  Deskripsi project baru kamu akan ada di sini. Ceritakan
+                  sedikit tentang fitur utamanya.
                 </p>
-                <a href="#" class="btn btn-primary">Link Project</a>
+                <a
+                  href="#"
+                  class="btn btn-secondary disabled rounded-pill btn-sm px-4 mt-auto"
+                  >Coming Soon</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="500">
+            <div class="card project-card h-100 shadow-sm border-0">
+              <img
+                src="https://via.placeholder.com/400x250?text=New+Project"
+                class="card-img-top"
+                alt="New Project"
+              />
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">Upcoming Project 3</h5>
+                <p class="card-text text-muted">
+                  Deskripsi project baru kamu akan ada di sini. Ceritakan
+                  sedikit tentang fitur utamanya.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-secondary disabled rounded-pill btn-sm px-4 mt-auto"
+                  >Coming Soon</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -225,41 +260,55 @@
         ></path>
       </svg>
     </section>
-    <!-- Akhir Project -->
-    <!-- Contack -->
+
     <section id="contact">
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
+        <div class="row text-center mb-4">
+          <div class="col" data-aos="fade-in">
+            <h2 class="section-title">Contact Me</h2>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
+          <div class="col-md-6" data-aos="zoom-in">
+            <form
+              action="https://formspree.io/f/sitiirmawatiirma39@gmail.com"
+              method="POST"
+              class="p-4 shadow-sm bg-white rounded-3"
+            >
               <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
+                <label class="form-label">Nama Lengkap</label>
                 <input
                   type="text"
-                  class="form-control"
-                  id="name"
-                  aria-describedby="name"
+                  name="name"
+                  class="form-control rounded-pill"
+                  placeholder="Masukkan Nama"
+                  required
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label class="form-label">Email</label>
                 <input
                   type="email"
-                  class="form-control"
-                  id="email"
-                  aria-describedby="email"
+                  name="email"
+                  class="form-control rounded-pill"
+                  placeholder="email@contoh.com"
+                  required
                 />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <label class="form-label">Pesan</label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  rows="3"
+                  style="border-radius: 15px"
+                  placeholder="Tulis pesan Anda di sini..."
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-primary w-100 rounded-pill">
+                Kirim Pesan
+              </button>
             </form>
           </div>
         </div>
@@ -272,26 +321,47 @@
         ></path>
       </svg>
     </section>
-    <!-- Akhir Contact -->
-    <!-- Footer -->
+
     <footer class="bg-primary text-center text-white pb-5">
       <p>
         Created by
-        <a href="https://www.instagram.com/itsirm__/" class="text-white fw-bold"
-          >Siti Irmawati</a
-        >
+        <a href="#home" class="text-white fw-bold">Siti Irmawati</a>
       </p>
-      <a href="https://www.instagram.com/itsirm__/" class="fa fa-instagram"></a>
-      <a
-        href="https://id.linkedin.com/in/siti-irmawati-704361293"
-        class="fa fa-linkedin"
-      ></a>
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/itsirm__/"
+          target="_blank"
+          class="fa fa-instagram"
+          title="Instagram"
+        ></a>
+
+        <a
+          href="https://id.linkedin.com/in/siti-irmawati-704361293"
+          target="_blank"
+          class="fa fa-linkedin"
+          title="LinkedIn"
+        ></a>
+
+        <a
+          href="https://github.com/irma-developer"
+          target="_blank"
+          class="fa fa-github"
+          title="GitHub"
+        ></a>
+
+        <a
+          href="https://wa.me/6281234567890"
+          target="_blank"
+          class="fa fa-whatsapp"
+          title="WhatsApp"
+        ></a>
+      </div>
     </footer>
-    <!-- Akhir Footer -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
   </body>
 </html>
